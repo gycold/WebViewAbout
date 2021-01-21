@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我调用JS代码"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="方式2：Android通过WebView的evaluateJavascript()调用js方法。 \n 注意：Android 4.4 后才可使用，因为该方法的执行不会使页面刷新，而第一种方法（loadUrl ）的执行则会。\n 优点：效率高。\n 缺点：向下兼容性差（仅安卓4.4以上可用），获取返回值麻烦。\n 使用场景：Android4.4以上"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/and_js"/>
+</LinearLayout>
